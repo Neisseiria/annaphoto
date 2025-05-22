@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
-html{
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 82px;
 }
-body{
-    font-family: "Lato", sans-serif;
-    color: black;
-    margin: 0;
+body {
+  font-family: "Lato", sans-serif;
+  color: black;
+  margin: 0;
 }
 
 /* //////////////////////////////////HEADER////////////////////////////////////// */
@@ -15,14 +16,14 @@ body{
 /* //////////////////////////////////HEADER////////////////////////////////////// */
 
 /* Position des éléments dans le header */
-#section-header{
+#section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Esthétique des éléments du header */
-header{
+header {
   top: 0;
   position: sticky;
   font-family: "Libre Baskerville", serif;
@@ -30,27 +31,27 @@ header{
   border-bottom: 1.5px solid black;
   z-index: 100;
   background-color: white;
- }
+}
 
- .logo-header{
+.logo-header {
   height: 7rem;
   width: auto;
   display: flex;
   justify-content: center;
   padding-left: 1rem;
- }
+}
 
-.nav-liens a{
+.nav-liens a {
   color: black;
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
 }
-.nav-liens a:hover{
+.nav-liens a:hover {
   text-shadow: 1px 1px #f7c5ee;
 }
 
-.logo-reseaux a{
+.logo-reseaux a {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
@@ -58,81 +59,88 @@ header{
   padding-right: 1rem;
 }
 
+.logo-reseaux a:hover {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
 /* //////////////////////////////////MAIN////////////////////////////////////// */
 /* //////////////////////////////////MAIN////////////////////////////////////// */
 /* //////////////////////////////////MAIN////////////////////////////////////// */
 /* //////////////////////////////////MAIN////////////////////////////////////// */
-
 
 /* //////////////////////////////////PAGE 1 - ACCUEIL////////////////////////////////////// */
 /* //////////////////////////////////PAGE 1 - ACCUEIL////////////////////////////////////// */
 
 /* Grid section accueil */
-#section-accueil{
+#section-accueil {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 100vh;
+  height: 100%;
 }
 
 /* Paramètres des photos mariage - accueil */
-.photos-mariage{
-grid-column: 1/2;
-grid-row: 1;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 4rem;
+.photos-mariage {
+  grid-column: 1/2;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
 }
 
 /* Taille des images mariage + hover */
-.photos-mariage img{
+.photos-mariage img {
   height: 30rem;
   width: 30rem;
   object-fit: cover;
   filter: grayscale(1);
 }
 
-.photos-mariage img:hover{
-filter: grayscale(0);
-transition: 1s;
+.photos-mariage img:hover {
+  filter: grayscale(0);
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 /* Bouton accueil + h1 alignement */
-.bouton-titre{
+.bouton-titre {
   grid-column: 1/2;
   grid-row: 2;
 }
 
-.bouton-titre h1{
+.bouton-titre h1 {
   text-align: center;
   font-family: "Libre Baskerville", serif;
 }
 
 /* Style des boutons pour toute la page !! */
-.boutons{
+.boutons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.boutons a{
-    background-color: #f9e6e0;
-    color: #000000;;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.8rem;
-    margin: 1rem;
+.boutons a {
+  background-color: #f9e6e0;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin: 1rem;
 }
 
-.boutons a:hover{
-    background-color:#000000;
-    color: #f9e6e0;
-    transition: all ease 0.3s;
+.boutons a:hover {
+  background-color: #000000;
+  color: #f9e6e0;
+  transition: all ease 0.3s;
 }
 
 /* //////////////////////////////////PAGE 2 - ABOUT////////////////////////////////////// */
@@ -140,15 +148,14 @@ transition: 1s;
 
 /* Grid section about */
 #section-about {
-  background-color: #f9e6e0;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
-  padding: 2rem;
   box-sizing: border-box;
   align-items: center;
+  margin: 2rem;
 }
 
 /* Titre sur toute la largeur, en haut */
@@ -158,7 +165,6 @@ transition: 1s;
   font-size: 2.5rem;
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
-  margin: 6rem;
 }
 
 /* Image de gauche */
@@ -181,6 +187,7 @@ transition: 1s;
   width: auto;
   height: auto;
   max-width: 100%;
+  border: 0.5px solid black;
 }
 
 /* Paragraphes au centre */
@@ -189,18 +196,18 @@ transition: 1s;
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Boutons */
-.boutons{
+.boutons {
   grid-column: 2 / 3;
   grid-row: 2;
   margin-top: 6rem;
   text-align: center;
 }
 
-.texte-bouton{
+.texte-bouton {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -210,64 +217,77 @@ transition: 1s;
 /* //////////////////////////////////PAGE 3 - GALERIE////////////////////////////////////// */
 /* //////////////////////////////////PAGE 3 - GALERIE////////////////////////////////////// */
 
-/* Grid Galerie */
-#section-galerie{
-  height: 80vh;
+/* Grid Galerie repensée */
+#section-galerie {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
   padding: 6rem;
   margin: 2rem;
+  height: 70vh;
 }
 
-/* Titre h2 */
+/* Titre h2 sur toute la largeur */
 #section-galerie h2 {
-  grid-column: 1 / 5;
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 2.5rem;
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
+  margin-top: -3rem;
 }
 
-/* Taille des images */
-#section-galerie img{
-  height: 20rem;
-  width: 35rem;
+/* Positionnement des éléments */
+.fjord {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cascade {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.lac {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+
+/* Ton texte qui complète le rectangle vide */
+#section-galerie h3 {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Images en mode couverture */
+#section-galerie img {
+  width: 100%;
+  height: 18rem;
   object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.7s ease;
 }
 
-/* Titre h3*/
-#section-galerie h3{
- grid-column: 3/4;
- grid-row: 3/5;
- padding: 15%;
-text-align: center;
+#section-galerie img:hover {
+  transform: scale(1.1);
 }
-
-/* Positionnement des images */
-.fjord{
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.cascade{
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.lac{
-  grid-column: 3/4;
-  grid-row: 2/5;
-}
-
 
 /* //////////////////////////////////PAGE 4 - SERVICES////////////////////////////////////// */
 /* //////////////////////////////////PAGE 4 - SERVICES////////////////////////////////////// */
 
 /* Taille page et background */
-#section-services{
+#section-services {
   height: 100vh;
-  background-color: #f9e6e0;
 }
 
 /* Titre h2*/
@@ -283,27 +303,27 @@ text-align: center;
   text-align: center;
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
-  padding-bottom: 3rem ;
+  padding-bottom: 3rem;
 }
 
 /* Alignement des services */
-#section-services .grille-services{
+#section-services .grille-services {
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
 
 /* Grid services */
-.grille-services{
+.grille-services {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   text-align: center;
 }
 
 /* Image des cartes */
-.grille-services img{
-  height: 200px;
-  width: 300px;
+.grille-services img {
+  height: 12.5rem;
+  width: 18.75rem;
   object-fit: cover;
   margin-top: 2rem;
 }
@@ -315,7 +335,7 @@ text-align: center;
 
 /* Titre des cartes */
 .grille-services h2 {
-  margin-top: -5rem; 
+  margin-top: -5rem;
   padding: 0.5rem 1rem;
   border-radius: 40px;
   text-align: center;
@@ -325,24 +345,28 @@ text-align: center;
   grid-column: 1 / 2;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .carte-service2 {
   grid-column: 2 / 3;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 0.5px solid #000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .carte-service3 {
   grid-column: 3 / 4;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
+  border: 0.5px solid #000;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -350,107 +374,141 @@ text-align: center;
   grid-column: 4 / 5;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 0.5px solid #000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
+
 .carte-service5 {
   grid-column: 5 / 6;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 0.5px solid #000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 
 .grille-services > div:hover {
   transform: scale(1.02); /* grossit légèrement */
-  background-color: white; 
+  background-color: white;
   transition: all 0.3s ease; /* animation douce */
 }
 
 /* //////////////////////////////////PAGE 5 - CONTACT////////////////////////////////////// */
 /* //////////////////////////////////PAGE 5 - CONTACT////////////////////////////////////// */
 
-/* Grid contact */
-#section-contact{
-  height: 90vh;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-    justify-self: center;
-  align-self: center;
+/* Paramètres page contact */
+#section-contact {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-/* Titre h2 */
-#section-contact h2 {
-  grid-column: 1/3;
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: "Libre Baskerville", serif;
-  text-transform: uppercase;
-  padding: 2rem;
-}
-/* Titre h3 */
+/* Titres page */
+#section-contact h2,
 #section-contact h3 {
-  grid-column: 1/3;
   text-align: center;
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
-  padding-bottom: 3rem ;
+}
+#section-contact h2 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+#section-contact h3 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  color: #555;
 }
 
-/* image appareil photo */
-#section-contact img{
-  grid-column: 1/2;
+/* Contenu de la page hors h2 et h3*/
+.contenu-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Colonne de gauche*/
+.contact-gauche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-gauche .appareil-photo {
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* infos de contact */
-#section-contact .infos-contact {
-  padding-left: 10rem;
-  text-align: center;
-  padding-bottom: 4rem;
+/* Iframe et infos contact*/
+.contact-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.contact-card iframe {
+  width: 15rem;
+  height: 12.5rem;
+  border: none;
+  flex-shrink: 0;
+}
+.contact-card address {
+  padding: 1rem;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Liens de l"adresse */
+.contact-card address a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+.contact-card address a:hover {
+  text-decoration: underline;
 }
 
-#section-contact .infos-contact a {
-    text-decoration: none;
-  color: black;
+/* Colonne droite */
+.contact-droite form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 600px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 
-/* Formulaire */
-#section-contact form {
-  grid-column: 2/3;
-  padding-left: 10rem;
+.contact-droite form input,
+.contact-droite form textarea {
+  padding: 2.5%; /*Taille cases du form*/
+  border-radius: 5px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1rem;
+  border: solid 1px black;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-height: 600px;
-    width: 400px;
-}
-
-form input, form textarea{
-    padding: 2.5%;
-    border-radius: 10px;
-    font-family: "Baloo 2", sans-serif;
-    font-size: 1rem;
-    border:solid 1px black;
-}
-
-form input{
+.contact-droite form input {
   cursor: pointer;
 }
 
-
-form button{
+/* Bouton form */
+.contact-droite form button {
   cursor: pointer;
   padding: 2.5%;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: "Baloo 2", sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -459,13 +517,11 @@ form button{
   background-color: black;
 }
 
-form button:hover{
+.contact-droite form button:hover {
   background-color: #f9e6e0;
   color: black;
   transition: 0.3s;
 }
-
-
 /* //////////////////////////////////FOOTER////////////////////////////////////// */
 /* //////////////////////////////////FOOTER////////////////////////////////////// */
 /* //////////////////////////////////FOOTER////////////////////////////////////// */
@@ -474,7 +530,7 @@ form button:hover{
 .contenu-footer {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   background-color: #f9e6e0;
   color: black;
 }
@@ -499,7 +555,7 @@ form button:hover{
 
 /* RS */
 .footer-droite a {
-  color: #f9e6e0;
+  color: #000000;
   font-size: 1.5rem;
   margin-right: 1.5rem;
   text-decoration: none;
@@ -507,5 +563,252 @@ form button:hover{
 }
 
 .footer-droite a:hover {
-  color: white; 
+  color: gray;
+}
+
+
+/* ///////////////////////////////RESPONSIVE////////////////////////////////// */
+/* ///////////////////////////////RESPONSIVE////////////////////////////////// */
+/* ///////////////////////////////RESPONSIVE////////////////////////////////// */
+/* ///////////////////////////////RESPONSIVE////////////////////////////////// */
+/* ///////////////////////////////RESPONSIVE////////////////////////////////// */
+
+@media (max-width: 600px) {
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  #section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  .logo-header {
+    height: 3.5rem;
+    padding-left: 0.5rem;
+  }
+  .logo-reseaux {
+    padding-right: 0.5rem;
+  }
+
+
+  /* ACCUEIL */
+  #section-accueil {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    padding: 0.5rem 0.2rem;
+    gap: 1.2rem;
+  }
+  .photos-mariage {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.8rem;
+    width: 100%;
+  }
+  .photos-mariage img {
+    width: 95vw;
+    max-width: 350px;
+    height: auto;
+    max-height: 170px;
+  }
+  .bouton-titre {
+    padding: 0 0.5rem;
+  }
+  .bouton-titre h1 {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  /* BOUTONS GLOBAUX */
+  .boutons {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+  }
+  .boutons a {
+    font-size: 1.05rem;
+    padding: 0.7rem 1.2rem;
+    margin: 0.4rem 0;
+    width: 90vw;
+    max-width: 290px;
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* ABOUT */
+  #section-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin: 0.5rem;
+    gap: 0.7rem;
+    height: auto;
+  }
+  .photoanna, .photoanna2 {
+    display: none;
+  }
+  #section-about h2 {
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+  }
+  #section-about p {
+    font-size: 1rem;
+    padding: 0 0.3rem;
+  }
+  .texte-bouton {
+    gap: 0.8rem;
+  }
+
+  /* GALERIE */
+  #section-galerie {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0.2rem;
+    margin: 0.2rem 0;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-galerie h2, #section-galerie h3 {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+
+  #section-galerie img {
+    width: 97vw;
+    max-width: 330px;
+    height: auto;
+    max-height: 160px;
+    min-height: 85px;
+    margin: 0 auto;
+  }
+
+  /* SERVICES */
+  #section-services {
+    height: auto;
+    padding: 1.5rem 0.2rem;
+  }
+  #section-services h2 {
+    font-size: 1.35rem;
+    padding: 0.5rem 0;
+  }
+  #section-services h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .grille-services {
+    display: flex;         /* On force la colonne */
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    width: 100%;
+  }
+  .grille-services > div { /*Toutes les div de grille-services */
+    max-width: 98vw;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .grille-services img {
+    width: 98vw;
+    max-width: 320px;
+    height: auto;
+    max-height: 140px;
+    min-height: 80px;
+    margin: 0 auto;
+  }
+  .grille-services h4 {
+    font-size: 1rem;
+    margin: 0.6rem 0 0.3rem 0;
+  }
+  .grille-services p {
+    font-size: 0.95rem;
+    margin: 0.2rem 1rem 1rem 1rem;
+  }
+
+  /* CONTACT */
+  #section-contact {
+    padding: 0.7rem 0.2rem;
+    max-width: 100vw;
+  }
+
+  .contenu-contact {
+    display: flex;
+    flex-direction: column-reverse; /* Inverse l'ordre */
+    gap: 0.7rem;
+  }
+  .contact-gauche .appareil-photo {
+    max-width: 95vw;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+  .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card iframe {
+    width: 96vw;
+    max-width: 320px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+  }
+  .contact-card address {
+    font-size: 0.93rem;
+    padding: 0.4rem;
+    text-align: center;
+  }
+  .contact-droite form {
+    max-width: 98vw;
+    width: 100%;
+    min-width: 0;
+    padding: 0 0.2rem;
+    margin: 0 0 0 2.5rem; /*pas de marge en haut, droite, bas mais à gauche oui*/
+    box-sizing: border-box;
+
+  }
+  .contact-droite form input,
+  .contact-droite form textarea {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+  .contact-droite form button {
+    font-size: 1.06rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.6rem;
+    margin: 0.5rem 0;
+    width: 90vw;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* FOOTER */
+  .contenu-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+    padding: 1rem 0.3rem;
+  }
+  .logo-footer {
+    margin: 0 auto 0.2rem auto;
+    height: 2rem;
+  }
+  .footer-droite {
+    margin: 0.3rem 0 0 0;
+  }
 }
